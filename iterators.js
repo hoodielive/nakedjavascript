@@ -11,4 +11,12 @@ function iteratoroverstuff(array) {
     };
 }
 
-iteratoroverstuff();
+var iteratenow = iteratoroverstuff(array);
+console.log(iteratenow.next().value);
+console.log(iteratenow.next().value);
+console.log(iteratenow.next().value);
+console.log(iteratenow.next().value);
+console.log(iteratenow.next().value);
+console.log(iteratenow.next().value);
+console.log(iteratenow.next().value);
+console.log(iteratenow.next().done);
