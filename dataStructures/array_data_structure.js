@@ -22,7 +22,7 @@ MyArray.prototype.search = function(data) {
 };
 
 MyArray.prototype.getAtIndex = function(index) {
-    return this.array.[index];
+    return this.array[index];
 };
 
 MyArray.prototype.length = function() {
@@ -42,3 +42,7 @@ array.add(3);
 array.add(4);
 array.print();
 
+
+// log
+
+console.log('search 3 gives index 2:', array.search(3));
