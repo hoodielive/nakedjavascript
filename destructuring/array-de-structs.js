@@ -12,3 +12,7 @@ name2;
 name3; 
 name4; 
 
+// destructuring works too 
+
+const [ name, name2, ...rest ] = companies; 
+rest; 
