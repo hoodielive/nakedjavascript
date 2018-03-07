@@ -37,9 +37,6 @@ MyArray.prototype.print = function() {
 var array = new MyArray();
 
 array.add(1);
-array.add(2);
-array.add(3);
-array.add(4);
 array.print();
 
 
