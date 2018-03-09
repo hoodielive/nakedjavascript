@@ -40,6 +40,6 @@ array.add(1);
 array.print();
 
 
-// log
+// log your findings
 
 console.log('search 3 gives index 2:', array.search(3));
