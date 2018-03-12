@@ -5,6 +5,12 @@ Current time is : 4 PM : 50 : 22
 **/
 
 
-var date_format = new Date()
+let today = new Date()
 
-console.log("Today is: " + date_format)
+let daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] 
+
+let hour = today.getHours(), minutes = today.getMinutes(), seconds = today.getSeconds(); 
+
+let day = today.getDay()
+
+console.log("Today is: " + daylist[day] + " " + hour +  ":" + minutes + ":" + seconds)
