@@ -22,7 +22,11 @@ function isCurrentYearLeapYear() {
 				}
 			}
 		}
-
 }
 
-isCurrentYearLeapYear()
+const daysInMonth = [ 
+	31, isCurrentYearLeapYear() ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
+]; 
+
+if(isCurrentYearLeapYear()) console.log('It is a leap year.'); 
+
