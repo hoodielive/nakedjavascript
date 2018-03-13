@@ -1,0 +1,6 @@
+function invokeRem() { 
+
+    if (diamond.forEach(function(diamon) {
+        return diamon.length == 0; 
+
+} 
