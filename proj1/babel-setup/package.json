@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "lint": "eslint ./ ",
-    "lint-fix": "eslint ./ --fix"
+    "lint": "eslint . ",
+    "lint-fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "lucid developer <hoodielive@gmail.com>",
