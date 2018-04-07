@@ -9,4 +9,6 @@ try {
     console.log("perform cleanup here"); 
 } 
 
-
+try {
+	console.log("This is a different thing") 
+} 
