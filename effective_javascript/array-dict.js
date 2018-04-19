@@ -18,3 +18,4 @@ dict.khu = 34, dict.enosh = 24, dict.osa = 62
 
 dict.count(); 
 
+console.log(dict.khu,dict.enosh, dict.osa); 
