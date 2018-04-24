@@ -4,8 +4,8 @@ var profession = 'journalism';
 
 var professional = {
 	name: 'John doe',
-	address : '12 Aethyr lane'
+	address : '12 Aethyr lane',
 	[profession] : {
 		experience: '12 years',
-		retirement
+		retirement: '7 years'
 	}
