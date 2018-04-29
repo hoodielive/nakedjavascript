@@ -19,4 +19,7 @@ var emitter = {
 
 }
 
+emitter.on('function', function() { return "This is how" });  
+
+console.log(emitter.events.function[0]()); 
 
