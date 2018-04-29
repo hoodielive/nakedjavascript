@@ -15,3 +15,8 @@ let getNumber = () => 42;
 console.log(typeof getNumber); // function 
 
 console.log(getNumber()); // 42 
+
+// in arrow functions, we can leave out the return keyword  -> exp get returned as long as it is not wrapped in {} 
+var getPrice = (quantity, tax) => (quantity * 5) * (1 + tax); 
+console.log(getPrice(2, .095)); // 10.95
+
