@@ -1,0 +1,7 @@
+Objects -> represents a fixed record of name-value associations, an object-oriented data abstraction with inherited methods, a dense or sparse array, or a hash table. 
+
+Javascript object table mapping string property names to values. 
+
+Collections -> aggregate data structures with varying numbers of elements 
+
+
