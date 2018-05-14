@@ -1,0 +1,6 @@
+[submodule "registration/regis-from-scratch/--name=react-quick"]
+	path = registration/regis-from-scratch/--name=react-quick
+	url = https://github.com/azat-co/react-quickly.git
+[submodule "registration/regis-from-scratch/react-quick"]
+	path = registration/regis-from-scratch/react-quick
+	url = https://github.com/azat-co/react-quickly.git
