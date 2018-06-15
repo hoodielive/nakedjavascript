@@ -11,7 +11,7 @@ const circle = {
 	}
 }; 
 
-// or Factory ? 
+// or Factory ? //  
 function createCircle() { 
 	return {
 		radius, // if the var name and value are the same, then just add name. Equiv to createCircle(radius) {
