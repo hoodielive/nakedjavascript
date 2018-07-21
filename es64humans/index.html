@@ -1,0 +1,41 @@
+<html> 
+	<head> 
+		<title>Welcome to my dummy site</title>
+	</head> 
+	<body>
+		<h1>Welcome to this Site</h1> 
+		<ul> 
+			<li>Apple</li>
+			<li>Banana</li>
+			<li>Orange</li>
+			<li>Mango</li>
+			<li>Grapefruit</li>
+			<li>Kiwi</li>
+		<script>
+			var listItems = document.querySelectorAll('li');
+
+			// converting Nodelist to an Array 
+			listItems = Array.prototype.slice.call(listItems)
+
+			// map 
+			listItems.map(item => { console.log(item.innerText) }); 
+
+			const customers = {
+					'0' : 'ayemi', 
+					'1' : 'ibeji',
+					'2' : 'ifa',
+					'3' : 'orunla',
+					'4' : 'orunmila',
+					'5' : 'oxala', 
+					'6' : 'osa',
+					'7' : 'yemaya',
+					length : 8
+			}
+			
+			Array.from(customers).forEach(customer => {
+				console.log(customer); 
+			}); 
+
+		</script>
+		</body>
+</html> 
