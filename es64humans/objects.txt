@@ -358,3 +358,4 @@ Return Statements:
 
 	-> if there is 'no expression', then the return value is undefined 
 	-> except for constructors, whose default return value is 'this' 
+	-> don't make functions in a loop 
