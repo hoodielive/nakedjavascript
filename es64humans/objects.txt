@@ -1,0 +1,236 @@
+Classes vs Prototypes 
+
+-> Javascript does not have Classes 
+
+Working with prototypes -> 
+	<>-------------------------------------------------<>
+	-> make an object that you like
+	-> create new instances that inherit from that object
+	-> customize new objects 
+	-> classification and taxonomy are not neccessary 
+	<>-------------------------------------------------<> 
+
+
+Delegation 
+	-> Differential Inheritance (each object obtains the material that distinguishes it from the object it is created from)
+	
+Object.create(prototype) -> this is the object that we want to inherit from
+
+Object.prototype 
+
+var mother = {
+  a: 1,
+  b: 2
+}; 
+
+var daughter = Object.create(mother);
+daughter.b += 2; 
+
+So if: 
+		   MOTHER 
+	<>------------------------<>
+		a = 1 
+		b = 2
+	<>------------------------<> 
+
+		   Daughter 
+		daughter.b += 2;
+
+		b = 4
+	<>------------------------<> 
+
+Everything in Javascript is an object -> 
+
+	-> Number
+	-> Boolean
+	-> String
+	-> Array
+	-> Date
+	-> RegExp
+	-> Function
+
+
+Numbers -> 
+	-> Only one number type - No integer types
+	-> 64-bit binary floating point
+	-> IEEE-754 (aka Double) 
+
+
+		a > 0
+		b > 0 
+
+		c = a + b; 
+
+	-> Possible results:
+		c < a
+		c < b 
+
+	-> Numbers are objects, so they have methods/properties: 
+		-> toExponential
+		-> toFixed
+		-> toLocaleString
+		-> toPrecision
+		-> toString
+		-> valueOf
+
+	-> Every number inherits from Number.prototype 
+
+		if (!Number.prototype.trunc) {
+		  Number.prototype.trunc = 
+		    function trunc(number) {
+		      return (number >= 0)
+		        ? Math.floor(number)
+			: Math.ceil(number);
+		    };
+	         } 
+
+	-> Numbers are first class objects
+		-> A number can be:
+			-> stored in a variable
+			-> passed as a parameter
+			-> returned from a function
+			-> stored in an object
+		-> can have:
+			-> methods
+
+	-> Math object 
+		-> abs
+		-> acos
+		-> asin
+		-> atan
+		-> atan2
+		-> ceil
+		-> cos
+		-> exp
+		-> floor
+		-> log
+		-> max
+		-> min
+		-> pow
+		-> random
+		-> round
+		-> sin
+		-> sqrt
+		-> tan
+		-> E
+		-> LN10
+		-> LN2
+		-> LOG2E
+		-> PI
+		-> SQRT1_2
+		-> SQRT2
+	
+	-> NaN
+
+-> String
+	-> a sequence of characters 
+	-> a sequence of 0 or more 16-bit Unicode characters
+		-> UCS-2, not quite UTF-16
+		-> No awareness of surrogate pairs 
+	-> No separate character type
+		-> Characters are represented as strings with length of 1
+	-> Strings are immutable 
+	-> Similar strings are equal ( === ) 
+	-> String literals can use single or double quotes with \ escapement 
+	-> Use " for external strings
+	-> Use ' for internal strings and characters
+	-> Use number's method (toString) to convert numbers to strings
+	-> Use String function
+		str = num.toString();
+		str = String(num)
+	-> Convert a string to a number
+		-> Use the Number function
+		-> Use the + prefix operator
+		-> Use the parseInt function
+			num = Number(str);
+			num = +str; 
+	-> String are objects, so they contain methods 
+		-> charAt
+		-> charCodeAt
+		-> compareLocale
+		-> concat
+		-> indexOf
+		-> lastIndexOf
+		-> localeCompare
+		-> match
+		-> replace
+		-> search
+		-> slice
+		-> split
+		-> substring
+		-> toLocaleLowerCase
+		-> toLocaleUpperCase
+		-> toString
+		-> toUpperCase
+		-> trim
+			if (typeof String.prototype.trim !== 'function') {
+			  String.prototype.trim = function () {
+			    return this.replace(
+			      /^\s*(\S*(\s+\S+)*)\s*$/,"$1");
+			   };
+			}
+		-> valueOf
+
+-> Arrays
+	-> Array inherits from Object
+	-> Indexes are converted to strings and used as names for retreiving values 
+	-> Very efficient for sparse arrays
+	-> Not very efficient in most other cases (dense arrays)
+	-> One advantage: No need to provide a length or type when creating an array
+	-> Length
+	  -> Arrays, unlink objects, have a special length property
+	  -> It is always 1 larger than the highest integer subscript
+	-> Array Literals
+		-> An array literal uses [] 
+		-> it can contain any number of expressions separated by commas
+			myList = ['oats', 'peas', 'beans']; 
+			myList[myList.length] = 'barley';
+		-> The dot notation should not be used with arrays 
+	-> Arrays are objects, so they contain methods
+		-> concat
+		-> every
+		-> filter
+		-> forEach
+		-> indexOf
+		-> join
+		-> lastIndexOf
+		-> map
+		-> pop
+		-> push
+		-> reduce
+		-> reduceRight
+		-> reverse
+		-> shift
+		-> slice
+		-> some
+		-> splice
+		-> some
+		-> toLocaleString
+		-> toString
+		-> unshift
+
+	-> sort method 
+		var n = [4, 8, 15, 16, 23, 42]; 
+
+		n.sort(); 
+
+		// n is [15, 16, 23, 4, 42, 8] // sorts them as strings lol 
+	
+	-> delete array by elements:
+		delete array[number] 
+
+		-> Removes the element, but leaves a hole in the numbering
+			array.splice(number, 1)
+		-> Removes the element and renumbers all the following elements 
+
+		myArray = ['a', 'b', 'c', 'd']; 
+		delete myArray[1];
+		// ['a', undefined, 'c', 'd'] 
+
+		myArray.splice(1, 1);
+		// ['a', 'c', 'd'] 
+
+		Arrays vs Objects
+		-> Use objects when the names are arbitrary strings
+		-> Use arrays when the names are sequential integers 
+		-> Don't get confused by the term Associative Array (objects) 
