@@ -234,3 +234,114 @@ Numbers ->
 		-> Use objects when the names are arbitrary strings
 		-> Use arrays when the names are sequential integers 
 		-> Don't get confused by the term Associative Array (objects) 
+
+Date -> not y2k ready 
+
+RegExp
+	-> borrowed from PERL 4 
+	-> http://jex.im/regulex/ 
+
+
+All values are objects except - null and undefined (bottom values) 
+
+	-> 'null' -> 
+	-> 'undefined' -> A value that is not an object (has no property values) 
+ 	-> used to indicate the absence or end of something 
+
+
+typeof 
+		-> the typeof prefix operator returns a string identifying the type of a value
+
+Falsy values
+		-> false
+		-> null
+		-> "" (empty string) 
+		-> 0
+		-> NaN
+		-> All other values (including all objects) are truthy
+			"0" "false"
+		-> All values can be said to be boolish
+
+
+Loosely Typed 
+		-> Any of these types can be stored in an variable, or passed as a parameter to any function
+		-> The langugae is not untyped
+		-> This is a good part 
+
+
+
+Syntax 
+	-> Identifiers 
+		-> Starts with a letter or _ or $ 
+		-> Followed by zero or more letters, digits, _ or $ 
+		-> By convention, all variables, parameters, members, and function names start with lower case
+		-> Except for constructor functions which start with upper case
+		-> Initial _ should be reserved for implementations
+		-> $ should be reserved for machines 
+	-> syntactically related to C
+
+	
+	-> Review Operators 
+
+Statements 
+	-> expression
+	-> if
+	-> switch
+	-> while
+	-> do
+	-> for
+	-> break
+	-> continue
+	-> return
+	-> try/throw
+
+		-> statements can have labels 
+		-> no more need for for Loops -.- use forEach function for Arrays or for in 
+
+FUNCTIONS
+Method, Class, Constructor, Module 
+
+-> make functions using the function expression:
+	-> function
+	-> optional name 
+	-> parameters
+		-> wrapped in parens
+		-> zero or more names
+		-> separated by , (comma) 
+	-> body
+		-> wrapped in curly braces
+		-> zero or more statements 
+
+-> a function expression produces an 'instance' of a function object
+-> function objects are first class
+	-> may be passed as an argument to a function
+	-> may be returned from a function
+	-> may be assigned to a variable
+	-> may be stored in an object or array
+-> function objects inherit from Function.prototype
+-> var statement
+	-> declares and initializes variables within a function 
+	-> types are not specified 
+	-> a variable declared anywhere within a function is visible everywhere within the function 
+	-> it gets split into 2 parts:
+		-> the declaration part gets hoisted to the top of the function, initializing with undefined
+		-> the initialization part turns into an ordinary assignment
+		ex -> var myVar = 0, myOtherVar; 
+
+	Expands to:
+		-> var myVar = undefined,
+		   myOtherVar = undefined,
+		   ... 
+		myVar = 0 
+-> function statement looks like the expression:
+	-> function
+	-> mandatory name
+	-> parameters
+		-> wrapped in parens
+		-> zero or more names
+		-> separated by, (comma)
+	-> body
+		-> wrapped in curly braces
+		-> zero or more statements
+
+		function foo() {} 
