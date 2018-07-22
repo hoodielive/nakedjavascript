@@ -345,3 +345,16 @@ Method, Class, Constructor, Module
 		-> zero or more statements
 
 		function foo() {} 
+
+Rules:
+	-> Declare all variables at the top of the function 
+	-> Declare all functions before you call them
+	-> The language provides mechanisms that allow you to ignore this advice, but they are problematic 
+
+Return Statements: 
+	-> return expression; 
+		or 
+	-> return; 
+
+	-> if there is 'no expression', then the return value is undefined 
+	-> except for constructors, whose default return value is 'this' 

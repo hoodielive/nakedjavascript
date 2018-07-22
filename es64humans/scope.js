@@ -9,3 +9,5 @@ function assure_positive(matrix, n) {
 		 } 
 	} 
 } 
+
+assure_positive(3, 3) 
