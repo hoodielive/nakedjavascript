@@ -41,7 +41,7 @@ var fruitSizes = [small,medium,large];
 // build 'new' objects that are combinations of the above ones and put them into a new array 
 var fruits = fruitTypes.reduce(function(previous, current) {
   var newFruit = fruitSizes.map(function(mixin) {
-    var newFruitObj = plusMixin(current, mixin);
+    var newFruitObj = function(current, mixin){return(current,mixin)};
     return new newFruitObj();
   }); 
   return previous.concat(newFruit);
