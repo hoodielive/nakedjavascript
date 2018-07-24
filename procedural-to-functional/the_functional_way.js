@@ -25,11 +25,11 @@ var small = {
   getPrice: function() {return this.basePrice + 2},
   getLabel: function() {return this.name + ' small'} 
 };
-var medium: {
+var medium = {
   getPrice: function() {return this.basePrice + 4},
   getLabel: function() {return this.name + ' medium'} 
 }; 
-var large: {
+var large = {
   getPrice: function() {return this.basePrice + 6},
   getLabel: function() {return this.name + ' large'} 
 }; 
