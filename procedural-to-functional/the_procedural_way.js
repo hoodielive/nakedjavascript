@@ -1,16 +1,16 @@
 // create some objects to store data 
 var grapes = { 
-    name: 'columbian',
+    name: 'grapes',
     basePrice: 5
 }; 
 
-var orange = {
-    name: 'orange',
+var oranges = {
+    name: 'oranges',
     basePrice: 3
 };
 
-var banana = {
-    name: 'banana',
+var bananas = {
+    name: 'bananas',
     basePrice: 2
 }; 
 
