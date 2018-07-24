@@ -22,16 +22,16 @@ var bananas = function() {
 
 // create object literals for the different sizes 
 var small = {
-  getPrice = function() {return this.basePrice + 2},
-  getLabel = function() {return this.name + ' small'} 
+  getPrice: function() {return this.basePrice + 2},
+  getLabel: function() {return this.name + ' small'} 
 };
-var medium = {
-  getPrice = function() {return this.basePrice + 4},
-  getLabel = function() {return this.name + ' medium'} 
+var medium: {
+  getPrice: function() {return this.basePrice + 4},
+  getLabel: function() {return this.name + ' medium'} 
 }; 
-var large = {
-  getPrice = function() {return this.basePrice + 6},
-  getLabel = function() {return this.name + ' large'} 
+var large: {
+  getPrice: function() {return this.basePrice + 6},
+  getLabel: function() {return this.name + ' large'} 
 }; 
 
 // put all the fruit (types|sizes) into arrays 
