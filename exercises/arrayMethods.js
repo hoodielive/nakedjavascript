@@ -22,7 +22,7 @@ function elijah(elem, index, array) {
 };
 
 function rebekah(elem, index, array) {
-	console.log('[array_index[' + index + elem + ']');
+	console.log('[array_index[' + index + ']' + elem);
 };
 
 console.log(fraeyah); 
