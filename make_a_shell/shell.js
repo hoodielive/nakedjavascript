@@ -1,9 +1,13 @@
+#!/usr/bin/env node
+
 const readline = require('readline')
 
 function main() { 
-  const cmdline = Readline.readline('> ', true); 
-  return cmdline; 
-}; 
+  const cmdline = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+};
 
 main(); 
 
