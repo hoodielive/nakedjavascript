@@ -12,6 +12,8 @@ MyArray.prototype.remove = function(data) {
     });
 };
 
+console.log('the product of')
+
 MyArray.prototype.search = function(data) {
     var foundIndex = this.array.indexOf(data);
     if(~foundIndex) {
