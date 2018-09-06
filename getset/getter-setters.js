@@ -6,6 +6,8 @@ const person = {
         return `${person.firstName} ${person.lastName} `
     },
     set fullName(value) {
+       // make sure that you have a valid string 
+        if (typeof value !== 'string') return; 
         const parts = value.split(' ')
         this.firstName = parts[0];
         this.lastName = parts[1]; 
