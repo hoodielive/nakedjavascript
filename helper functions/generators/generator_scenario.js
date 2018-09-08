@@ -5,16 +5,16 @@ function* shopping() {
 
 
   // walking down the sidewalk
-  
 
   // go into the store with cash 
 
  const stuffFromStore = yield 'cash'; 
 
+ const cleanClothes = yield 'laundry'; 
 
   // Headed back home
 
-  return stuffFromStore
+  return console.log([stuffFromStore, cleanclothes]);
 }
 
 // Stuff in the store 
