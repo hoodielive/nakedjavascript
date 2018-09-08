@@ -10,4 +10,4 @@ git commit -m "$1"
 
 sleep 5
 
-gp
+git push
