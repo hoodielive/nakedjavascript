@@ -1,0 +1,17 @@
+What is a generator?
+
+- A function that can be entered and exited multiple times 
+- Normally functions run and exit 
+- With generators you can run some code and go right back where left off 
+
+What does a generator do?
+
+
+Iterations with generators 
+
+
+Generator delegation 
+
+
+Generators with Symbol.iterator 
+
