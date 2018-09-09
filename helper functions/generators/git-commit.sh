@@ -4,10 +4,10 @@
 
 git add -A 
 
-sleep 5
+sleep 3
 
 git commit -m "$1"
 
-sleep 5
+sleep 3
 
 git push
