@@ -1,0 +1,30 @@
+Transpiling 
+
+- Transpile is a portmanteau of the words translate and compile. 
+- Compilers typically compile a written programming language into a incomprehensible machine code.
+- A transpiler is a special kind of compiler that translates from the source code of one programming language 
+  to the source code of another. 
+
+  Steps to set up a transpiler: babel
+
+  mkdir project name 
+  cd project_name
+  npm init -y
+
+  npm install babel-cli --save-dev
+  npm install babel-preset-es2015 --save-dev
+
+  test:
+  nvim index.js
+    let foo = "bar"; 
+
+  save and run it 
+
+  babel src -d dist // creates a directory called dist for transpiled code
+
+  Interesting plugins: 
+  npm install babel-preset-stage-0
+  npm install babel-plugin-transform-decorators-legacy
+  npm run babel 
+
+

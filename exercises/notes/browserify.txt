@@ -1,0 +1,8 @@
+Browserify
+
+- a tool that lets you define modules and then bundle them into single file. 
+
+npm install browserify --global 
+npm install babelify 
+
+
