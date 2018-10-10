@@ -8,7 +8,7 @@ let read, write;
   }
 
   read = function(key) {
-    return data[key];  
+    return console.log(data[key]);  
   }
 }
 
