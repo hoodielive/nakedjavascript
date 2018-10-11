@@ -12,3 +12,10 @@ function* myGeneratorFunction() {
 }
 
 const myGenerator = myGeneratorFunction(); 
+
+const myObject = {
+  * myGen() {
+    // ... 
+  }
+
+}
