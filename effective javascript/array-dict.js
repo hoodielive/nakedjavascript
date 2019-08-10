@@ -39,3 +39,5 @@ for (name in dict) {
 } 
 
 console.log(names); 
+
+// cries...
